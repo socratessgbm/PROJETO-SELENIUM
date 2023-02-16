@@ -2,6 +2,8 @@ from selenium import webdriver
 
 import time
 
+
+
 navegador = webdriver.Chrome()
 navegador.maximize_window()
 navegador.get("https://ri.magazineluiza.com.br/")
