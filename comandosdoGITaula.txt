@@ -53,3 +53,4 @@ Após fazer uma alteração em algum arquivo, utiliza os comandos abaixo.
 git add .
 git commit -m "Atualização do do arquivo comandosdoGitaula.txr"
 git push
+
