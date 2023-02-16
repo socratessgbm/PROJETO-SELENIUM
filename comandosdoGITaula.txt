@@ -1,0 +1,55 @@
+Comandos do GIT
+* git add index.html -> adiciona ao repositorio
+* git status -> verifica o status
+* git commit -m "Inicializamos o projeto"
+* git config --global user.email "socrates.sgbm@gmail.com"
+* git config --global user.name "Sócrates Gambarra"
+* git log -> dados das modificações
+* git add .   -->> coringa adiciona tudo que foi modificado ou diferente
+* git commit -m "Adicionamos o arquivo CSS no projeto"
+professos: dimitriteixeira@gmail.com
+
+git init     --> inicializa um novo repositório Git local na pasta atual
+git add      --> adiciona arquivos selecionados para a área de stage (pronto para ser comitado)
+git commit   -m "Modificação feita" --> grava as alterações feitas na área de stage como uma nova versão do código
+git status   --> verifica o status atual do repositório, incluindo arquivos modificados e arquivos na área de stage.
+git log      --> ver histórico de commits.
+git add .    --> adiciona tudo que foi modificado ou adiciona
+git checkout --> usado para alterar entre branches, criar novos branches, ou mudara para uma versão anterior do código em um branch existente. 
+git checkout ba4bc054dc36b192dfc8fed171b7387b163fe518 --> retorna versão
+git log --all --> verifica todas as versões da ramificação
+git checkout -b somar --> Criei uma nova branch chamada SOMAR em uma nova ramificação do ponto que estou
+git branch --> Para ver os branch que tenho dentro do projeto - Git 
+git merge  --> Permite unir o conteúdo de duas ou mais branches em uma únicaa branch. É usado para integra alterações feitas em uma branch secundária (geralmente uma branch de desenvolvimento) na branch principal (geralmente a branch master)
+
+** master é a principal e "somar" é a branch
+Quanto eu fizer uma modificação, uso os seguintes comandos
+git add .
+git status
+git commit  -m "Criado a função somar dentro do arquivo index.js"
+git checkout master --> Navega para Master
+git checkout somar --> Navega para branch somar
+
+**************
+MERGE - Juntar o que está na Branch
+# Primeiro entra na principal "MASTER" 
+git checkout master
+# Segundo, usar o comando para incorporar 
+git merge somar --> incorporou a implementação da MERGE na MASTER
+
+***********************************************
+No Github cria um projeto e joga para dentro do mesmo
+e executa os comandos abaixo:
+…or push an existing repository from the command line
+ --Git Remote informa para onde vai enviar o projeto do Vscode para o Github
+git remote add origin git@github.com:socratessgbm/aula-de-git.git
+ -- O git push trasfere do Vscode para o GiHub com o nome da Branch principal como Master
+git push -u origin master
+
+git branch -M main -->> Não precisa executar esse
+
+**************************************************
+Após fazer uma alteração em algum arquivo, utiliza os comandos abaixo.
+git add .
+git commit -m "Atualização do do arquivo comandosdoGitaula.txr"
+git push
