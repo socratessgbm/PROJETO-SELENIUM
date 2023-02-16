@@ -54,3 +54,14 @@ git add .
 git commit -m "Atualização do do arquivo comandosdoGitaula.txr"
 git push
 
+*** INICIANDO UM PROJETO
+git init
+git status
+git add nomedoarquivo 
+git add . -->> todos arquivos
+git commit   -m "Inclusão do arquivo comandosdoGtaula.txt"
+git push
+
+***git add . -->> todos arquivos
+git commit   -m "Alteração do arquivo comandosdoGtaula.txt"
+git push
